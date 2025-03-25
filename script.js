@@ -49,12 +49,14 @@ document.addEventListener("DOMContentLoaded", function() {
             { nome: "Atualizar Dados", url: "./action/atualizar_dados.html"},
             { nome: "Fila de Atendimento", url: "./action/fila_atendimento.html"},
             { nome: "Agendamento", url: "./action/agendamento.html"},
-            { nome: "Marcar Consulta", url: "./action/marcar_consulta.html"}
+            { nome: "Marcar Consulta", url: "./action/marcar_consulta.html"},
+            { nome: "Recepção de serviço", url: "./action/recepcao_servico.html"}
 
         ],
         "medico.html": [
-            { nome: "Consultar Paciente", url: "./action/consultar_paciente.html" },
-            { nome: "Prescrever Medicamento", url: "./action/prescrever_medicamento.html" }
+            { nome: "Atualizar Dados", url: "./action/atualizar_dados.html" },
+            { nome: "Fila de Atendimento", url: "./action/fila_atendimento.html" },
+            { nome: "Agendamento", url: "./action/agendamento.html"},
         ]
         // Adicione mais cargos conforme necessário
     };
