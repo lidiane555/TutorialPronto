@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     inicializarBotoesPaginaPrincipal();
     inicializarBotoesPaginaCargo();
+    carregarComponentes();
   });
   
   /**
@@ -111,5 +112,25 @@ document.addEventListener("DOMContentLoaded", function () {
   
     elementoLink.appendChild(botao);
   }
+  async function carregarComponentes() {
+    const headerContainer = document.querySelector("#header-container");
+    const footerContainer = document.querySelector("#footer-container");
 
+    if (headerContainer && !sessionStorage.getItem("header")) {
+        const headerResponse = await fetch("/components/header.html");
+        const headerText = await headerResponse.text();
+        sessionStorage.setItem("header", headerText);
+        headerContainer.innerHTML = headerText;
+    } else if (headerContainer) {
+        headerContainer.innerHTML = sessionStorage.getItem("header");
+    }
 
+    if (footerContainer && !sessionStorage.getItem("footer")) {
+        const footerResponse = await fetch("/components/footer.html");
+        const footerText = await footerResponse.text();
+        sessionStorage.setItem("footer", footerText);
+        footerContainer.innerHTML = footerText;
+    } else if (footerContainer) {
+        footerContainer.innerHTML = sessionStorage.getItem("footer");
+    }
+}
