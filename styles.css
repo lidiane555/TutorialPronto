@@ -145,12 +145,23 @@ button:hover {
         width: 100%;
         height: auto;
     }
+   
+    header .logo {
+        content: url('../img/brasaojf.png'); /* Troca a imagem */
+        height: 50px; /* Ajuste o tamanho da nova imagem */
+        width: auto; /* Mantém a proporção */
+    }
 }
 
 /* Responsividade para tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
     .imgPDF {
         width: 100%;
+    }
+    header .logo {
+        content: url('../img/brasaojf.png'); /* Troca a imagem */
+        height: 50px; /* Ajuste o tamanho da nova imagem */
+        width: auto; /* Mantém a proporção */
     }
 }
 
