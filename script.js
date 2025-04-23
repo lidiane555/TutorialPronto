@@ -26,19 +26,25 @@ document.addEventListener("DOMContentLoaded", function () {
    */
   const DADOS_ACOES_POR_CARGO = {
     "recepcionista.html": [
-      { nome: "Pesquisar Usuário", url: "./action/pesquisar_usuario.html" },
-      { nome: "Importar Usuário", url: "./action/importar_usuario.html" },
-      { nome: "Cadastrar Usuário", url: "./action/cadastro_de_usuario.html" },
-      { nome: "Atualizar Dados", url: "./action/atualizar_dados.html" },
-      { nome: "Fila de Atendimento", url: "./action/fila_atendimento.html" },
-      { nome: "Agendamento", url: "./action/agendamento.html" },
-      { nome: "Marcar Consulta", url: "./action/marcar_consulta.html" },
-      { nome: "Recepção de serviço", url: "./action/recepcao_servico.html" },
+        { nome: "Pesquisar Usuário", url: "./action/pesquisar_usuario.html" },
+        { nome: "Importar Usuário", url: "./action/importar_usuario.html" },
+        { nome: "Cadastrar Usuário", url: "./action/cadastro_de_usuario.html" },
+        { nome: "Atualizar Dados", url: "./action/atualizar_dados.html" },
+        { nome: "Fila de Atendimento", url: "./action/fila_atendimento.html" },
+        { nome: "Agendamento", url: "./action/agendamento.html" },
+        { nome: "Marcar Consulta", url: "./action/marcar_consulta.html" },
+        { nome: "Recepção de serviço", url: "./action/recepcao_servico.html" },
     ],
     "medico.html": [
-      { nome: "Atualizar Dados", url: "./action/atualizar_dados.html" },
-      { nome: "Fila de Atendimento", url: "./action/fila_atendimento.html" },
-      { nome: "Agendamento", url: "./action/agendamento.html" },
+        { nome: "Atualizar Dados", url: "./action/atualizar_dados.html" },
+        { nome: "Fila de Atendimento", url: "./action/fila_atendimento.html" },
+        { nome: "Agendamento", url: "./action/agendamento.html" },
+    ],
+    "agente_saude.html": [
+        { nome: "Cadastrar Cidadão", url: "./action/cadastrar_cidadao.html" },
+        { nome: "Cadastrar Domicílio", url: "./action/cadastrar_domicilio.html" },
+        { nome: "Adicionar Membro da Família", url: "./action/adicionar_membro.html" },
+        { nome: "Enviar Dados", url: "./action/enviar_dados.html" },
     ],
     // Adicione mais cargos conforme necessário
   };
