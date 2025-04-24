@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("JavaScript carregado!");
-  
+
+    carregarComponentes();
     inicializarBotoesPaginaPrincipal();
     inicializarBotoesPaginaCargo();
-    carregarComponentes();
+    ajustarCaminhoLogo();
   });
   
   /**
@@ -139,4 +140,14 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (footerContainer) {
         footerContainer.innerHTML = sessionStorage.getItem("footer");
     }
+}
+
+function ajustarCaminhoLogo() {
+  const logo = document.querySelector(".logo");
+  if (logo) {
+      const path = window.location.pathname.includes("/action/")
+          ? "../../img/logoPrefeitura.png"
+          : "../img/logoPrefeitura.png";
+      logo.setAttribute("src", path);
+  }
 }
