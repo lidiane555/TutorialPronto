@@ -139,34 +139,20 @@ button:hover {
     margin-right: auto;
 }
 
-.barra-pesquisa {
+.barra-pesquisa-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
 
-.barra-pesquisa input {
+.barra-pesquisa-container input {
     width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     margin-right: 10px;
-}
-
-.barra-pesquisa button {
-    padding: 10px 20px;
-    background-color: #418dda;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.barra-pesquisa button:hover {
-    background-color: #5195fc;
 }
 
 /* Responsividade para celular */
