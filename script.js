@@ -129,9 +129,14 @@ async function carregarComponentes() {
     const footerContainer = document.querySelector("#footer-container");
     const barraPesquisaContainer = document.querySelector(".barra-pesquisa-container");
 
+    // Detecta o caminho base dependendo da localização da página
+    const basePath = window.location.pathname.includes("/pages/") ? "../components/" : "/components/";
+
+    console.log(`Carregando header de: ${basePath}header.html`);
+
     // Carregar o header
     if (headerContainer && !sessionStorage.getItem("header")) {
-        const headerResponse = await fetch("/components/header.html");
+        const headerResponse = await fetch(`${basePath}header.html`);
         const headerText = await headerResponse.text();
         sessionStorage.setItem("header", headerText);
         headerContainer.innerHTML = headerText;
@@ -141,7 +146,7 @@ async function carregarComponentes() {
 
     // Carregar o footer
     if (footerContainer && !sessionStorage.getItem("footer")) {
-        const footerResponse = await fetch("/components/footer.html");
+        const footerResponse = await fetch(`${basePath}footer.html`);
         const footerText = await footerResponse.text();
         sessionStorage.setItem("footer", footerText);
         footerContainer.innerHTML = footerText;
@@ -149,7 +154,7 @@ async function carregarComponentes() {
         footerContainer.innerHTML = sessionStorage.getItem("footer");
     }
 
-    // Carregar a barra de pesquisa
+    // Carregar a barra de pesquisa 
     if (barraPesquisaContainer && !sessionStorage.getItem("barraPesquisa")) {
         const barraPesquisaResponse = await fetch("/components/barraPesquisa.html");
         const barraPesquisaText = await barraPesquisaResponse.text();
