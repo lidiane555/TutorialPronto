@@ -62,7 +62,7 @@ h2 {
     margin: 20px 0;
 }
 
-
+/* Estilo CARGOS */
 .cargos-container {
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +109,7 @@ button:hover {
     transform: scale(1.10); 
 }
 
+/* Estilo AÇÃO */
 .ação-container {
     display: flex;
     flex-wrap: wrap;
@@ -139,6 +140,8 @@ button:hover {
     margin-right: auto;
 }
 
+
+/* Estilo BARRA PESQUISA */
 .barra-pesquisa-container {
     display: flex;
     justify-content: center;
@@ -153,6 +156,149 @@ button:hover {
     border-radius: 5px;
     font-size: 16px;
     margin-right: 10px;
+}
+
+/* Estilo HOME PAGE GERAL */
+
+.apresentacao h1 {
+    font-size: 2.5rem;
+    color: #004080;
+}
+
+.tutoriais {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 2; /* Faz a seção de Tutoriais ocupar mais espaço */
+    max-width: none; /* Remove o limite de largura */
+}
+
+.tutoriais h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categoria {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoria img {
+    width: 150px; /* Ajuste o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoria h3 {
+    font-size: 1.5rem;
+    color: #004080;
+}
+
+.categoria p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.categoria .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.categoria .btn:hover {
+    background-color: #5195fc;
+}
+
+/* Estilo LOGIN */
+.login {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 20px;
+    flex: 1; /* Faz a seção ocupar proporcionalmente o espaço disponível */
+    max-width: none; /* Remove o limite de largura */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.login .btn:hover {
+    background-color: #5195fc;
+}
+
+/* Contêiner para Login e Tutoriais */
+.conteudo-lateral {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as seções */
+    align-items: flex-start; /* Alinha as seções no topo */
+    gap: 20px; /* Espaço entre as seções */
+    margin: 20px 0; /* Remove margens laterais */
+    width: 100%; /* Faz o contêiner ocupar toda a largura */
+    padding: 0 20px; /* Adiciona um espaçamento interno */
 }
 
 /* Responsividade para celular */
@@ -178,6 +324,17 @@ button:hover {
         content: url('../img/brasaojf.png'); /* Troca a imagem */
         height: 50px; /* Ajuste o tamanho da nova imagem */
         width: auto; /* Mantém a proporção */
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .conteudo-lateral {
+        flex-direction: column; /* Empilha as seções verticalmente */
+    }
+
+    .login, .tutoriais {
+        max-width: 100%; /* Faz as seções ocuparem toda a largura */
     }
 }
 

@@ -3,58 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleção de Cargo</title>
+    <title>Home - Tutorial PRONTO</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header id="header-container"></header>
     <main>
-        <h2>Selecione seu Cargo:</h2>
-        <div class="barra-pesquisa-container"></div>
-        <div class="cargos-container">
-            <div class="cargo">
-                <img src="img/Recepicionista.webp" alt="Ícone de Recepcionista">
-                <a href="cargos/recepcionista.html"></a>
-            </div>
-            <div class="cargo">
-                <img src="img/médico.webp" alt="Ícone de Médico">
-                <a href="cargos/medico.html"></a>
-            </div>
-            <div class="cargo">
-                <img src="img/enfermeira.webp" alt="Ícone de Enfermeiro">
-                <a href="cargos/enfermeiro.html"></a>
-            </div>
-            <div class="cargo">
-                <img src="img/dentista.webp" alt="Ícone de Dentista">
-                <a href="cargos/dentista.html"></a>
-            </div>
-            <div class="cargo">
-                <img src="img/farmaceuta.webp" alt="Ícone de Farmacêutico">
-                <a href="cargos/farmaceutico.html"></a>
-            </div>
-            <div class="cargo">
-                <img src="img/Agente_Comunitário_Saúde.webp" alt="Ícone de Vigilância Sanitária">
-                <a href="cargos/vigilancia.html"></a>
-            </div>
-            <div class="cargo">
-                <img src="img/Assistente Social.webp" alt="Ícone de Assistente Social">
-                <a href="cargos/assistente_social.html"></a>
-            </div>
-            <div class="cargo">
-                <img src="img/Agente_Saude.webp" alt="Ícone de Agente Comunitário de Saúde">
-                <a href="cargos/agente_saude.html"></a>
-            </div>
-            <div class="cargo">
-                <img src="img/enfermeira.webp" alt="Ícone de Auxiliar/Técnico em Enfermagem">
-                <a href="cargos/tecnico_enfermagem.html"></a>
-            </div>
-            <div class="cargo">
-                <a href="cargos/"></a>
-            </div> 
+        <!-- Seção de Apresentação -->
+        <section class="apresentacao">
+            <h1>Bem-vindo ao Tutorial PRONTO!</h1>
+            <p>
+                Nossa plataforma foi criada para ajudar profissionais a navegar por processos e ações de forma simples e eficiente. Explore nossos tutoriais e encontre o que você precisa!
+            </p>
+        </section>
+
+        <!-- Contêiner para Login e Tutoriais -->
+        <div class="conteudo-lateral">
+            <!-- Seção de Login -->
+            <section class="login">
+                <h2>Login</h2>
+                <form action="/login" method="POST" class="login-form">
+                    <div class="form-group">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit" class="btn">Entrar</button>
+                </form>
+            </section>
+
+            <!-- Seção de Tutoriais -->
+            <section class="tutoriais">
+                <h2>Explore nossos Tutoriais</h2>
+                <div class="categorias">
+                    <div class="categoria">
+                        <img src="./img/LogoPRONTO.png" alt="">
+                        <p>Encontre tutoriais específicos para cada cargo.</p>
+                        <a href="homePronto.html" class="btn">Ver Tutoriais</a>
+                    </div>
+                    <div class="categoria">
+                        <h3>Ferramentas</h3>
+                        <p>Aprenda a usar ferramentas essenciais.</p>
+                        <a href="ferramentas/index.html" class="btn">Ver Ferramentas</a>
+                    </div>
+                   
+                </div>
+            </section>
         </div>
     </main>
     <footer id="footer-container"></footer>
-    
 </body>
 </html>
