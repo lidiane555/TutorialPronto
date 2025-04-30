@@ -1,0 +1,30 @@
+{
+  "name": "tutorialpronto",
+  "version": "1.0.0",
+  "description": "Este projeto é uma landing page interativa desenvolvida para auxiliar os profissionais da saúde do município de Juiz de Fora na adaptação e utilização do novo sistema **PRONTO** — um software que visa integrar todas as áreas da saúde da cidade, promovendo maior eficiência e comunicação entre os setores.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msarlo/TutorialPronto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msarlo/TutorialPronto/issues"
+  },
+  "homepage": "https://github.com/msarlo/TutorialPronto#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.15.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
