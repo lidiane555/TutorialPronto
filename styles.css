@@ -49,7 +49,7 @@ main {
 
 
 footer {
-    background: #004080;
+    background: #a2e691;
     color: white;
     padding: 10px;
     text-align: center;
@@ -94,7 +94,7 @@ h2 {
 
 
 button {
-    background: #004080;
+    background: #ff8c00; /* Laranja */
     color: white;
     border: none;
     padding: 10px;
@@ -105,9 +105,10 @@ button {
 }
 
 button:hover {
-    background: #5195fc;
+    background: #ffa500; /* Laranja mais claro ao passar o mouse */
     transform: scale(1.10); 
 }
+
 
 /* Estilo AÇÃO */
 .ação-container {
@@ -162,7 +163,7 @@ button:hover {
 
 .apresentacao h1 {
     font-size: 2.5rem;
-    color: #004080;
+    color: #FFC300; /* Amarelo escuro */
 }
 
 .tutoriais {
@@ -177,7 +178,7 @@ button:hover {
 .tutoriais h2 {
     text-align: center;
     font-size: 2rem;
-    color: #004080;
+    color: #3399FF; /* Azul mais claro */
     margin-bottom: 20px;
 }
 
@@ -189,7 +190,7 @@ button:hover {
 }
 
 .categoria {
-    background: #f1f1f1;
+    background: #f5faff; /* Cor mais clara */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -208,19 +209,19 @@ button:hover {
 
 .categoria h3 {
     font-size: 1.5rem;
-    color: #004080;
+    color: #FFC300; /* Amarelo forte */
 }
 
 .categoria p {
     font-size: 1rem;
     margin: 10px 0;
-    color: #555;
+    color: #000; /* Preto */
 }
 
 .categoria .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #004080;
+    background-color: #000; /* Preto */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -228,13 +229,13 @@ button:hover {
 }
 
 .categoria .btn:hover {
-    background-color: #5195fc;
+    background-color: #CC9900; /* Amarelo mais escuro */
 }
 
 /* Estilo LOGIN */
 .login {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #fff; /* Branco */
     text-align: center;
     margin-top: 20px;
     flex: 1; /* Faz a seção ocupar proporcionalmente o espaço disponível */
@@ -245,7 +246,7 @@ button:hover {
 
 .login h2 {
     font-size: 2rem;
-    color: #004080;
+    color: #FFC300; /* Amarelo forte */
     margin-bottom: 20px;
 }
 
@@ -253,6 +254,9 @@ button:hover {
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
+    background-color: #FFF9C4; /* Amarelo claro */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .form-group {
@@ -262,17 +266,11 @@ button:hover {
 .form-group label {
     display: block;
     font-size: 1rem;
-    color: #333;
+    color: #FFA500; /* Laranja */
     margin-bottom: 5px;
 }
 
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
+.ccccc
 
 .login .btn {
     display: inline-block;
@@ -287,7 +285,7 @@ button:hover {
 }
 
 .login .btn:hover {
-    background-color: #5195fc;
+    background-color: #000; /* Preto */
 }
 
 /* Contêiner para Login e Tutoriais */
@@ -306,7 +304,7 @@ nav .btn-header {
     display: inline-block;
     padding: 10px 15px;
     margin-left: 10px;
-    background-color: #004080;
+    background-color: #FFC300; /* Amarelo forte */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -315,7 +313,7 @@ nav .btn-header {
 }
 
 nav .btn-header:hover {
-    background-color: #5195fc;
+    background-color: #FFC300; /* Amarelo forte */
 }
 
 /* Responsividade para celular */
